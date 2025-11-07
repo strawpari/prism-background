@@ -5,21 +5,21 @@ import { Renderer, Triangle, Program, Mesh } from 'ogl';
 import './Prism.css';
 
 const Prism = ({
-  height = 3.5,
-  baseWidth = 5.5,
+  height = 1.8,
+  baseWidth = 4.9,
   animationType = 'rotate',
   glow = 1,
   offset = { x: 0, y: 0 },
-  noise = 0.5,
+  noise = 0.4,
   transparent = true,
-  scale = 3.6,
-  hueShift = 0,
-  colorFrequency = 1,
+  scale = 1.6,
+  hueShift = 0.16,
+  colorFrequency = 2.7,
   hoverStrength = 2,
   inertia = 0.05,
   bloom = 1,
   suspendWhenOffscreen = false,
-  timeScale = 0.5
+  timeScale = 0.1
 }) => {
   const containerRef = useRef(null);
 
